@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/facebanking/static/css/main.d1b05096.chunk.css",
+    "main.js": "/facebanking/static/js/main.94e7b1ae.chunk.js",
+    "main.js.map": "/facebanking/static/js/main.94e7b1ae.chunk.js.map",
+    "runtime-main.js": "/facebanking/static/js/runtime-main.cf390269.js",
+    "runtime-main.js.map": "/facebanking/static/js/runtime-main.cf390269.js.map",
+    "static/js/2.d5d1aec6.chunk.js": "/facebanking/static/js/2.d5d1aec6.chunk.js",
+    "static/js/2.d5d1aec6.chunk.js.map": "/facebanking/static/js/2.d5d1aec6.chunk.js.map",
+    "index.html": "/facebanking/index.html",
+    "precache-manifest.1a46455aec214a37271f37daa3b6f6ba.js": "/facebanking/precache-manifest.1a46455aec214a37271f37daa3b6f6ba.js",
+    "service-worker.js": "/facebanking/service-worker.js",
+    "static/css/main.d1b05096.chunk.css.map": "/facebanking/static/css/main.d1b05096.chunk.css.map",
+    "static/js/2.d5d1aec6.chunk.js.LICENSE.txt": "/facebanking/static/js/2.d5d1aec6.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/facebanking/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cf390269.js",
+    "static/js/2.d5d1aec6.chunk.js",
+    "static/css/main.d1b05096.chunk.css",
+    "static/js/main.94e7b1ae.chunk.js"
+  ]
+}
