@@ -3,10 +3,48 @@
 }
 
 .App {
+  margin: auto;
+  max-width: 720px;
   text-align: center;
+  padding: 0 16px;
 }
 
-.open-facebook {
+.Logo {
+  max-width: 120px;
+}
+
+.Copy {
+  position: relative;
+}
+
+.Copy-copied {
+  animation: evaporate 0.5s forwards 0.5s;
+  color: #3b599c;
+  font-size: 14px;
+  font-weight: 700;
+  position: absolute;
+  right: 4px;
+  top: 4px;
+}
+
+.Copy-preview {
+  background-color: #eee;
+  border: 1px solid #ccc;
+  padding: 16px;
+}
+
+@keyframes evaporate {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    transform: translate(0, -16px);
+  }
+}
+
+.OpenFacebook {
   background: linear-gradient(#4f69a5, #3b599c);
   border-radius: 8px;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
