@@ -16,16 +16,13 @@ function App() {
 
   const message = 'Hey, I saw you liked Bernie on Facebook! Have you considered volunteering with him before the election?';
 
-  if (!IS_MOBILE) {
-    return (
-      <div className="Desktop">
-        Please open this website on your mobile device! <span role="img" aria-label="Fire">🔥</span>
-      </div>
-    );
-  }
-
   return (
     <div className="App">
+      {!IS_MOBILE ?
+        <div className="Desktop">NOTE: We're still working on supporting desktop browsers. Until then, please check out this website on your mobile device!</div>
+        :
+        ''
+      }
       <div className="Copy">
         <CopyToClipboard text={message}
           onCopy={() => {
