@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 // @ts-ignore: No types available
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import './App.css';
-import logo from './journey-logo.png';
+import logo from './images/super-tuesday.jpg';
 
 
 const IS_FIREFOX_DESKTOP = (/Firefox/i).test(navigator.userAgent) && !(/mobile/i).test(navigator.userAgent);
@@ -28,32 +28,37 @@ function App() {
             // Restart animation.
             setCopied(false);
             setTimeout(() => void setCopied(true), 100);
+            openFacebook();
           }}>
           <div>
             <div>
               <img className="Logo" alt="Bernie logo" src={logo} />
             </div>
             <div className="Copy-cta">
-              Click to copy the prompt to your clipboard.
+              Instructions:
+              <ul>
+                <li>Click below to open a list of your FB friends who like Bernie.</li>
+                <li>Ask them to volunteer over Facebook chat!</li>
+                <li>(Note) The greeting below will be copied to your clipboard.</li>
+              </ul>
               <div className="Copy-copied"
                 hidden={!copied}>
                 Copied!
               </div>
             </div>
             <div className="Copy-preview">{message}</div>
+
+            {IS_FIREFOX_DESKTOP ?
+            <div className="FirefoxDesktop">
+              Instructions: Scroll down on the Facebook page to see a list of your friends who liked Bernie's page. Then reach out to them via messenger!
+            </div>
+            :null}
+
+            <div className="OpenFacebook">
+              Message FB friends who like Bernie
+            </div>
           </div>
         </CopyToClipboard>
-      </div>
-
-      {IS_FIREFOX_DESKTOP ?
-      <div className="FirefoxDesktop">
-        Instructions: Just click the link below and scroll down on the page that opens. You'll see a list of your friends who have liked Bernie's page. Reach out to them via messenger!
-      </div>
-      :null}
-
-      <div className="OpenFacebook"
-        onClick={openFacebook}>
-        Facebook friends who like Bernie
       </div>
     </div>
   );
