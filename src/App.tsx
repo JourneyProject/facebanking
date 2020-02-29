@@ -5,11 +5,15 @@ import './App.css';
 import logo from './journey-logo.png';
 
 
-function openFacebookMessenger() {
-  window.open('https://m.facebook.com/nt/?id=%2Fpages%2Fentity%2Fstream%2F%3Fpage_id%3D124955570892789%26fetcher%3Dfriends_who_liked', '_blank');
-}
+const IS_FIREFOX_DESKTOP = (/Firefox/i).test(navigator.userAgent) && !(/mobile/i).test(navigator.userAgent);
 
-const IS_MOBILE = /mobile/i.test(navigator.userAgent);
+function openFacebook() {
+  if (IS_FIREFOX_DESKTOP) {
+    window.open('https://www.facebook.com/pg/berniesanders/community');
+  } else {
+    window.open('https://m.facebook.com/nt/?id=%2Fpages%2Fentity%2Fstream%2F%3Fpage_id%3D124955570892789%26fetcher%3Dfriends_who_liked', '_blank');
+  }
+}
 
 function App() {
   const [copied, setCopied] = useState(false);
@@ -18,11 +22,6 @@ function App() {
 
   return (
     <div className="App">
-      {!IS_MOBILE ?
-        <div className="Desktop">NOTE: We're still working on supporting desktop browsers. Until then, please check out this website on your mobile device!</div>
-        :
-        ''
-      }
       <div className="Copy">
         <CopyToClipboard text={message}
           onCopy={() => {
@@ -46,9 +45,15 @@ function App() {
         </CopyToClipboard>
       </div>
 
+      {IS_FIREFOX_DESKTOP ?
+      <div className="FirefoxDesktop">
+        Instructions: Just click the link below and scroll down on the page that opens. You'll see a list of your friends who have liked Bernie's page. Reach out to them via messenger!
+      </div>
+      :null}
+
       <div className="OpenFacebook"
-        onClick={openFacebookMessenger}>
-        Open Facebook Messenger
+        onClick={openFacebook}>
+        Facebook friends who like Bernie
       </div>
     </div>
   );
