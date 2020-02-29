@@ -19,7 +19,7 @@ function App() {
   if (!IS_MOBILE) {
     return (
       <div className="Desktop">
-        Please open this website on your mobile device! 📱🔥
+        Please open this website on your mobile device! <span role="img" aria-label="Fire">🔥</span>
       </div>
     );
   }
