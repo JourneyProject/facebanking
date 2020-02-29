@@ -1,24 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+
+
+function openFacebookMessenger() {
+  window.open('https://www.facebook.com/messages', '_blank');
+}
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div>Graphic</div>
+      <div>Calls to action</div>
+      <div>Text to copy to clipboard</div>
+      <div className="open-facebook"
+           onClick={openFacebookMessenger}>
+        Open Facebook Messenger
+      </div>
     </div>
   );
 }
