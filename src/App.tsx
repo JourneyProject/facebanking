@@ -9,10 +9,20 @@ function openFacebookMessenger() {
   window.open('https://m.facebook.com/nt/?id=%2Fpages%2Fentity%2Fstream%2F%3Fpage_id%3D124955570892789%26fetcher%3Dfriends_who_liked', '_blank');
 }
 
+const IS_MOBILE = /mobile/i.test(navigator.userAgent);
+
 function App() {
   const [copied, setCopied] = useState(false);
 
   const message = 'Hey, I saw you liked Bernie on Facebook! Have you considered volunteering with him before the election?';
+
+  if (!IS_MOBILE) {
+    return (
+      <div className="Desktop">
+        Please open this website on your mobile device! 📱🔥
+      </div>
+    );
+  }
 
   return (
     <div className="App">

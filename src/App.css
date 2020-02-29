@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+.Desktop {
+  padding: 32px;
+  font-size: 32px;
+}
+
 .App {
   margin: auto;
   max-width: 720px;
