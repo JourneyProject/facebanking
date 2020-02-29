@@ -17,14 +17,20 @@
   position: relative;
 }
 
+.Copy-cta {
+  position: relative;
+}
+
 .Copy-copied {
-  animation: evaporate 0.5s forwards 0.5s;
+  animation: evaporate 0.5s forwards;
   color: #3b599c;
+  cursor: none;
   font-size: 14px;
   font-weight: 700;
   position: absolute;
-  right: 4px;
-  top: 4px;
+  right: 8px;
+  top: 0px;
+  user-select: none;
 }
 
 .Copy-preview {
@@ -40,7 +46,7 @@
 
   to {
     opacity: 0;
-    transform: translate(0, -16px);
+    transform: scale(2);
   }
 }
 

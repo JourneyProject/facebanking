@@ -16,15 +16,7 @@ function App() {
 
   return (
     <div className="App">
-      <div>
-        <img className="Logo" alt="Bernie logo" src={logo} />
-      </div>
-
       <div className="Copy">
-        <div className="Copy-copied"
-          hidden={!copied}>
-          Copied!
-        </div>
         <CopyToClipboard text={message}
           onCopy={() => {
             // Restart animation.
@@ -32,7 +24,16 @@ function App() {
             setTimeout(() => void setCopied(true), 100);
           }}>
           <div>
-            <div>Click below to copy the prompt.</div>
+            <div>
+              <img className="Logo" alt="Bernie logo" src={logo} />
+            </div>
+            <div className="Copy-cta">
+              Click to copy the prompt to your clipboard.
+              <div className="Copy-copied"
+                hidden={!copied}>
+                Copied!
+              </div>
+            </div>
             <div className="Copy-preview">{message}</div>
           </div>
         </CopyToClipboard>
