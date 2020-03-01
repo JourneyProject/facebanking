@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
 // @ts-ignore: No types available
-import { CopyToClipboard } from 'react-copy-to-clipboard';
 import './App.css';
 import BernieImage from './images/bernie.png';
 
@@ -20,11 +19,6 @@ function openFacebook() {
 }
 
 function App() {
-  const [copied, setCopied] = useState(false);
-
-  const message =
-    "Hey, I'm volunteering with Bernie. Can you make time to volunteer tomorrow?";
-
   return (
     <div className='App'>
       <div className='Header'>
