@@ -68,7 +68,7 @@ body {
 
 .OpenFacebook {
   background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
-  background-color: #3b599c;
+  background-color: rgb(3, 106, 210);
   border-radius: 8px;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   color: #fff;
@@ -78,10 +78,10 @@ body {
   margin: 16px 16px 0;
   padding: 12px 18px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-  transition: all 0.1s;
+  transition: all 0.2s;
   user-select: none;
 }
 
 .OpenFacebook:hover {
-  background-color: #4b73c9;
+  background-color: rgb(0, 128, 255);
 }
