@@ -40,7 +40,7 @@ function App() {
           <li>2) Choose a friend (Note: They all like Bernie)</li>
           <li>
             3) Click the
-            <img className='Instructions-messenger' src={MessengerImage} />{' '}
+            <img className='Instructions-messenger' alt="Facebook Messenger icon" src={MessengerImage} />{' '}
             button next to their name
           </li>
           <li>4) Ask your friend to commit to voting</li>
