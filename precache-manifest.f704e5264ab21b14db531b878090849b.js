@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "879c41443623c2746f0e22378836e5b7",
+    "revision": "25ca59e91421feb429d5b12b2cd6bc23",
     "url": "/facebanking/index.html"
   },
   {
-    "revision": "e2c0e0533de7d673f984",
-    "url": "/facebanking/static/css/main.1f3878bc.chunk.css"
+    "revision": "0e3c55e38c202f8ee116",
+    "url": "/facebanking/static/css/main.29b38625.chunk.css"
   },
   {
     "revision": "9f718823276e7af90deb",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/facebanking/static/js/2.dfbcb5b7.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e2c0e0533de7d673f984",
-    "url": "/facebanking/static/js/main.a0e790b7.chunk.js"
+    "revision": "0e3c55e38c202f8ee116",
+    "url": "/facebanking/static/js/main.38b50802.chunk.js"
   },
   {
     "revision": "34f75e05c24310adbfaa",

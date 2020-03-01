@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/facebanking/static/css/main.1f3878bc.chunk.css",
-    "main.js": "/facebanking/static/js/main.a0e790b7.chunk.js",
-    "main.js.map": "/facebanking/static/js/main.a0e790b7.chunk.js.map",
+    "main.css": "/facebanking/static/css/main.29b38625.chunk.css",
+    "main.js": "/facebanking/static/js/main.38b50802.chunk.js",
+    "main.js.map": "/facebanking/static/js/main.38b50802.chunk.js.map",
     "runtime-main.js": "/facebanking/static/js/runtime-main.cf390269.js",
     "runtime-main.js.map": "/facebanking/static/js/runtime-main.cf390269.js.map",
     "static/js/2.dfbcb5b7.chunk.js": "/facebanking/static/js/2.dfbcb5b7.chunk.js",
     "static/js/2.dfbcb5b7.chunk.js.map": "/facebanking/static/js/2.dfbcb5b7.chunk.js.map",
     "index.html": "/facebanking/index.html",
-    "precache-manifest.e035a06a585ee0966d87242b22b4d56f.js": "/facebanking/precache-manifest.e035a06a585ee0966d87242b22b4d56f.js",
+    "precache-manifest.f704e5264ab21b14db531b878090849b.js": "/facebanking/precache-manifest.f704e5264ab21b14db531b878090849b.js",
     "service-worker.js": "/facebanking/service-worker.js",
-    "static/css/main.1f3878bc.chunk.css.map": "/facebanking/static/css/main.1f3878bc.chunk.css.map",
+    "static/css/main.29b38625.chunk.css.map": "/facebanking/static/css/main.29b38625.chunk.css.map",
     "static/js/2.dfbcb5b7.chunk.js.LICENSE.txt": "/facebanking/static/js/2.dfbcb5b7.chunk.js.LICENSE.txt",
     "static/media/super-tuesday.jpg": "/facebanking/static/media/super-tuesday.91094f80.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.cf390269.js",
     "static/js/2.dfbcb5b7.chunk.js",
-    "static/css/main.1f3878bc.chunk.css",
-    "static/js/main.a0e790b7.chunk.js"
+    "static/css/main.29b38625.chunk.css",
+    "static/js/main.38b50802.chunk.js"
   ]
 }

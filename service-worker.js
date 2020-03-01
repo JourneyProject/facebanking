@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/facebanking/precache-manifest.e035a06a585ee0966d87242b22b4d56f.js"
+  "/facebanking/precache-manifest.f704e5264ab21b14db531b878090849b.js"
 );
 
 self.addEventListener('message', (event) => {
