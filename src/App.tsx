@@ -2,6 +2,7 @@ import React from 'react';
 // @ts-ignore: No types available
 import './App.css';
 import BernieImage from './images/bernie.png';
+import MessengerImage from './images/messenger.png';
 
 const IS_FIREFOX_DESKTOP =
   /Firefox/i.test(navigator.userAgent) && !/mobile/i.test(navigator.userAgent);
@@ -35,9 +36,17 @@ function App() {
       <div className='Instructions'>
         <strong>Instructions:</strong>
         <ul>
-          <li>1) Lorem ipsum</li>
-          <li>2) Lorem ipsum</li>
-          <li>3) Lorem ipsum</li>
+          <li>1) Click the "Send DMs on Facebook" button</li>
+          <li>2) Choose a friend (Note: They all like Bernie)</li>
+          <li>
+            3) Click the
+            <img className='Instructions-messenger' src={MessengerImage} />{' '}
+            button next to their name
+          </li>
+          <li>4) Ask your friend to commit to voting</li>
+          <li>5) Ask your friend to volunteer</li>
+          <li>6) Thank your friend</li>
+          <li>7) Return to step 2</li>
         </ul>
       </div>
 
@@ -45,7 +54,7 @@ function App() {
         Send DMs on Facebook
       </div>
 
-      <div className="clear-both"></div>
+      <div className='clear-both'></div>
     </div>
   );
 }
