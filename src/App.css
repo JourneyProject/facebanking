@@ -7,12 +7,6 @@ body {
   font-family: sans-serif;
 }
 
-.FirefoxDesktop {
-  font-size: 20px;
-  margin: 32px 0 16px;
-  padding: 0 16px;
-}
-
 .App {
   background-color: #fff;
   border-radius: 0 0 8px 8px;
@@ -25,57 +19,70 @@ body {
 .Logo {
   margin: 0 0 16px;
   width: 100%;
+  border-bottom: 3px solid rgb(19, 131, 191);
 }
 
-.Copy {
+.Header {
   position: relative;
 }
 
-.Copy-cta {
-  padding: 0 16px;
-  position: relative;
-}
-
-.Copy-copied {
-  animation: evaporate 0.5s forwards;
-  color: #3b599c;
-  cursor: none;
-  font-size: 14px;
-  font-weight: 700;
+.Header-dms,
+.Header-for,
+.Header-bernie {
   position: absolute;
-  right: 16px;
-  top: 0px;
-  user-select: none;
+  font-weight: 700;
+  text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.6);
 }
 
-.Copy-preview {
-  background-color: #eee;
-  border: 2px solid #ccc;
-  border-radius: 8px;
-  padding: 16px;
-  margin: 16px;
+.Header-dms {
+  color: #fff;
+  font-size: 65px;
+  top: 44px;
+  right: 130px;
 }
 
-@keyframes evaporate {
-  from {
-    opacity: 1;
-  }
+.Header-for {
+  color: #fff;
+  font-size: 32px;
+  top: 75px;
+  right: 75px;
+  font-style: italic;
+}
 
-  to {
-    opacity: 0;
-    transform: scale(2);
-  }
+.Header-bernie {
+  color: #f20832;
+  font-size: 70px;
+  top: 100px;
+  right: 50px;
+}
+
+.Instructions {
+  font-size: 22px;
+  margin: 32px;
+}
+
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
+}
+
+.clear-both {
+  clear: both;
 }
 
 .OpenFacebook {
   background-color: rgb(19, 131, 191);
-  color: rgb(255, 255, 255);
   border-radius: 4px;
   border: 1px solid rgb(19, 131, 191);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  color: rgb(255, 255, 255);
   cursor: pointer;
-  display: inline-block;
+  font-size: 20px;
   font-weight: 700;
-  margin: 16px 16px 0;
+  margin: 0 32px;
   padding: 12px 18px;
   transition: all 0.1s ease-in-out;
   user-select: none;

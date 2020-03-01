@@ -2,64 +2,56 @@ import React, { useState } from 'react';
 // @ts-ignore: No types available
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import './App.css';
-import logo from './images/super-tuesday.jpg';
+import BernieImage from './images/bernie.png';
 
-
-const IS_FIREFOX_DESKTOP = (/Firefox/i).test(navigator.userAgent) && !(/mobile/i).test(navigator.userAgent);
+const IS_FIREFOX_DESKTOP =
+  /Firefox/i.test(navigator.userAgent) && !/mobile/i.test(navigator.userAgent);
 
 function openFacebook() {
   if (IS_FIREFOX_DESKTOP) {
     window.open('https://www.facebook.com/pg/berniesanders/community');
   } else {
-    window.open('https://m.facebook.com/nt/?id=%2Fpages%2Fentity%2Fstream%2F%3Fpage_id%3D124955570892789%26fetcher%3Dfriends_who_liked', '_blank', 'width=320,height=480');
+    window.open(
+      'https://m.facebook.com/nt/?id=%2Fpages%2Fentity%2Fstream%2F%3Fpage_id%3D124955570892789%26fetcher%3Dfriends_who_liked',
+      '_blank',
+      'width=320,height=480'
+    );
   }
 }
 
 function App() {
   const [copied, setCopied] = useState(false);
 
-  const message = 'Hey, I\'m volunteering with Bernie. Can you make time to volunteer tomorrow?';
+  const message =
+    "Hey, I'm volunteering with Bernie. Can you make time to volunteer tomorrow?";
 
   return (
-    <div className="App">
-      <div className="Copy">
-        <CopyToClipboard text={message}
-          onCopy={() => {
-            // Restart animation.
-            setCopied(false);
-            setTimeout(() => void setCopied(true), 100);
-            openFacebook();
-          }}>
-          <div>
-            <div>
-              <img className="Logo" alt="Bernie logo" src={logo} />
-            </div>
-            <div className="Copy-cta">
-              Instructions:
-              <ul>
-                <li>Click below to open a list of your FB friends who like Bernie.</li>
-                <li>Ask them to volunteer over Facebook chat!</li>
-                <li>(Note) The greeting below will be copied to your clipboard.</li>
-              </ul>
-              <div className="Copy-copied"
-                hidden={!copied}>
-                Copied!
-              </div>
-            </div>
-            <div className="Copy-preview">{message}</div>
-
-            {IS_FIREFOX_DESKTOP ?
-            <div className="FirefoxDesktop">
-              Instructions: Scroll down on the Facebook page to see a list of your friends who liked Bernie's page. Then reach out to them via messenger!
-            </div>
-            :null}
-
-            <div className="OpenFacebook">
-              Chat on Facebook
-            </div>
-          </div>
-        </CopyToClipboard>
+    <div className='App'>
+      <div className='Header'>
+        <img className='Logo' alt='Bernie logo' src={BernieImage} />
+        <div className='Header-dms'>DMs</div>
+        <div className='Header-for'>for</div>
+        <div className='Header-bernie'>Bernie</div>
       </div>
+
+      <div className='OpenFacebook float-right' onClick={openFacebook}>
+        Send DMs on Facebook
+      </div>
+
+      <div className='Instructions'>
+        <strong>Instructions:</strong>
+        <ul>
+          <li>1) Lorem ipsum</li>
+          <li>2) Lorem ipsum</li>
+          <li>3) Lorem ipsum</li>
+        </ul>
+      </div>
+
+      <div className='OpenFacebook float-left' onClick={openFacebook}>
+        Send DMs on Facebook
+      </div>
+
+      <div className="clear-both"></div>
     </div>
   );
 }
