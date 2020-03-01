@@ -4,8 +4,25 @@ import './App.css';
 import BernieImage from './images/bernie.png';
 import MessengerImage from './images/messenger.png';
 
+// @ts-ignore: No types available
+import Analytics from 'analytics'
+// @ts-ignore: No types available
+import googleAnalytics from '@analytics/google-analytics'
+ 
+const analytics = Analytics({
+  app: 'dms-for-bernie',
+  plugins: [
+    googleAnalytics({
+      trackingId: 'UA-159403078-1'
+    })
+  ]
+})
+
 const IS_FIREFOX_DESKTOP =
   /Firefox/i.test(navigator.userAgent) && !/mobile/i.test(navigator.userAgent);
+
+const IS_LOCAL_SERVER =
+  /localhost/i.test(window.location.toString()) || /127.0.0.1/i.test(window.location.toString());
 
 function openFacebook() {
   if (IS_FIREFOX_DESKTOP) {
@@ -20,6 +37,11 @@ function openFacebook() {
 }
 
 function App() {
+  if(!IS_LOCAL_SERVER) {
+    // Track this in GA in prod only so we have a general idea of usage
+    analytics.page()
+  }
+
   return (
     <div className='App'>
       <div className='Header'>
