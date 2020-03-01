@@ -90,3 +90,25 @@
   border-color: rgb(43, 156, 217);
   color: rgb(255, 255, 255);
 }
+
+@media (max-width: 460px) {
+  .Header-dms {
+    top: 4px;
+  }
+  
+  .Header-for {
+    top: 35px;
+  }
+  
+  .Header-bernie {
+    top: 60px;
+  }
+
+  .OpenFacebook {
+    font-size: 18px;
+  }
+
+  .Instructions {
+    margin-top: 64px;
+  }
+}
