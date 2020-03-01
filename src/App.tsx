@@ -55,7 +55,7 @@ function App() {
             :null}
 
             <div className="OpenFacebook">
-              Message FB friends who like Bernie
+              Chat on Facebook
             </div>
           </div>
         </CopyToClipboard>

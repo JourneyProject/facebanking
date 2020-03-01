@@ -4,6 +4,7 @@ body {
 
 * {
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 .FirefoxDesktop {
@@ -67,21 +68,21 @@ body {
 }
 
 .OpenFacebook {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
-  background-color: rgb(3, 106, 210);
-  border-radius: 8px;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-  color: #fff;
+  background-color: rgb(19, 131, 191);
+  color: rgb(255, 255, 255);
+  border-radius: 4px;
+  border: 1px solid rgb(19, 131, 191);
   cursor: pointer;
   display: inline-block;
   font-weight: 700;
   margin: 16px 16px 0;
   padding: 12px 18px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-  transition: all 0.2s;
+  transition: all 0.1s ease-in-out;
   user-select: none;
 }
 
 .OpenFacebook:hover {
-  background-color: rgb(0, 128, 255);
+  background-color: rgb(43, 156, 217);
+  border-color: rgb(43, 156, 217);
+  color: rgb(255, 255, 255);
 }
