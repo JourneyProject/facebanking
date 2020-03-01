@@ -1,0 +1,223 @@
+/* .App {
+  background-color: #fff;
+  border: 2px solid rgb(204, 204, 204);
+  border-radius: 0 0 8px 8px;
+  margin: auto;
+  max-width: 720px;
+  padding: 0 0 32px;
+} */
+
+
+// Font Extensions
+%callout-bold {
+  font-weight: 700;
+  font-family: jubilat, serif;
+}
+
+.App {
+  font-family: canada-type-gibson, sans-serif !important;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 17px;
+  color: #00324d;
+  text-align: left;
+
+  // Top Nav
+  .navbar {
+    box-shadow: 0 2px 2px rgba(0,0,0,.2);
+    padding: 8px 16px;
+    height: 59px;
+
+    .navbar-brand {
+      width: 100px;
+      @extend %callout-bold;
+
+      img {
+        margin-left: 10px;
+        height: 100%;
+        width: 100%;
+        vertical-align: middle;
+        border-style: none;
+      }
+    }
+
+    .nav-item {
+      .nav-link {
+        color: #00324d;
+        font-weight: 500;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 17px;
+
+        &:hover {
+          color: #2b9cd9;
+        }
+      }
+    }
+  }
+
+  // Hero Call Out
+  .hero-wrapper {
+    padding: 0;
+    height: 600px;
+    
+    .row {
+      height: 100%;
+
+      .bernie-phone {
+        height: 100%;
+        background-color: white;
+        background-image: linear-gradient(to left, rgb(255, 255, 255), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url(../images/bernie-phone.png);
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: cover;
+        // width: 50%;
+      }
+
+      .cta-wrapper {
+        padding-top: 48px;
+        padding-right: 40px;
+        
+        h2 {
+          @extend %callout-bold;
+          font-size: 60px;
+          line-height: 60px;
+
+          i {
+            color: #2b9cd9;
+          }
+        }
+
+        ol {
+          li {
+            i {
+              font-size: 14px;
+            }
+          }
+        }
+
+        .cta {
+          font-weight: 600;
+          
+          .fb-messenger-logo {
+            width: 25px;
+            height: 25px;
+            background-image: url(../images/fb-messenger.svg);
+            display: inline-block;
+            color: white;
+            background-color: white;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+/* .Logo {
+  margin: 0 0 16px;
+  width: 100%;
+  border-bottom: 3px solid rgb(19, 131, 191);
+}
+
+.Header {
+  position: relative;
+}
+
+.Header-dms,
+.Header-for,
+.Header-bernie {
+  position: absolute;
+  font-weight: 700;
+  text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.6);
+}
+
+.Header-dms {
+  color: #fff;
+  font-size: 65px;
+  top: 44px;
+  right: 130px;
+}
+
+.Header-for {
+  color: #fff;
+  font-size: 32px;
+  top: 75px;
+  right: 75px;
+  font-style: italic;
+}
+
+.Header-bernie {
+  color: #f20832;
+  font-size: 70px;
+  top: 100px;
+  right: 50px;
+}
+
+.Instructions {
+  font-size: 22px;
+  margin: 48px 32px 32px;
+}
+
+.Instructions-messenger {
+  margin: 0 3px;
+  height: 20px;
+  width: 20px;
+}
+
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
+}
+
+.clear-both {
+  clear: both;
+}
+
+.OpenFacebook {
+  background-color: rgb(19, 131, 191);
+  border-radius: 4px;
+  border: 1px solid rgb(19, 131, 191);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 32px;
+  padding: 12px 18px;
+  transition: all 0.1s ease-in-out;
+  user-select: none;
+}
+
+.OpenFacebook:hover {
+  background-color: rgb(43, 156, 217);
+  border-color: rgb(43, 156, 217);
+  color: rgb(255, 255, 255);
+}
+
+@media (max-width: 460px) {
+  .Header-dms {
+    top: 4px;
+  }
+  
+  .Header-for {
+    top: 35px;
+  }
+  
+  .Header-bernie {
+    top: 60px;
+  }
+
+  .OpenFacebook {
+    font-size: 18px;
+  }
+
+  .Instructions {
+    margin-top: 64px;
+  }
+} */
