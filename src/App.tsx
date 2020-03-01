@@ -18,7 +18,7 @@ function openFacebook() {
 function App() {
   const [copied, setCopied] = useState(false);
 
-  const message = 'Hey, I saw you liked Bernie on Facebook! Have you considered volunteering with him before the election?';
+  const message = 'Hey, I\'m volunteering with Bernie. Can you make time to volunteer tomorrow?';
 
   return (
     <div className="App">
