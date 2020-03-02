@@ -39,7 +39,8 @@ function Hero(props: HeroProps) {
                         <li>Click the big red button <i>(this will open a new window{!IS_FIREFOX_DESKTOP && <span> into FB Messenger</span>})</i></li>
                         {IS_FIREFOX_DESKTOP && <li>Scroll down on the page that opens. You'll see a list of your friends who have liked Bernie's page. Reach out to them via messenger! <i>(Applicable for Firefox on Desktop Only)</i></li>}
                         {!IS_FIREFOX_DESKTOP && !IS_MOBILE && <li>In the new window, click the <i className="fab fa-facebook-messenger"></i> next to a friends name <i>(Remember, these are friends <b>who already like Bernie</b>)</i></li>}
-                        {IS_MOBILE && <li>In the new window, click your friend's name first (important!) then click "<i className="fab fa-facebook-messenger"></i> Message" <i>(Remember, these are friends <b>who already like Bernie</b>)</i></li>}
+                        {IS_MOBILE && <li>In the new window, click your friend's name <i>(Remember, these are friends <b>who already like Bernie</b>)</i></li>}
+                        {IS_MOBILE && <li>Reach out to them via messenger!</li>}
                     </ol>
                     <CopyToClipboard text={FACEBANK_DEFAULT_TEXT}>
                         <Card className="copy-area">
