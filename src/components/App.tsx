@@ -14,7 +14,7 @@ import Footer from './Footer'
 import Analytics from 'analytics'
 // @ts-ignore: No types available
 import googleAnalytics from '@analytics/google-analytics'
-import { IS_FIREFOX_DESKTOP, IS_LOCAL_SERVER } from './environment';
+import { IS_LOCAL_SERVER } from './environment';
 
 const analytics = Analytics({
   app: 'dms-for-bernie',
@@ -25,19 +25,6 @@ const analytics = Analytics({
   ]
 });
 
-function openFacebook() {
-  if (IS_FIREFOX_DESKTOP) {
-    window.open('https://www.facebook.com/pg/berniesanders/community');
-  } else {
-    window.open(
-      'https://m.facebook.com/nt/?id=%2Fpages%2Fentity%2Fstream%2F%3Fpage_id%3D124955570892789%26fetcher%3Dfriends_who_liked',
-      '_blank',
-      'width=320,height=490'
-    );
-  }
-  if (!IS_LOCAL_SERVER) { analytics.track('dm-button-clicked') }
-}
-
 function App() {
   // Track this in GA in prod only so we have a general idea of usage
   if (!IS_LOCAL_SERVER) { analytics.page() }
@@ -46,7 +33,7 @@ function App() {
     <div className='App'>
       <Header></Header>
       <TopCallout></TopCallout>
-      <Hero onCtaClick={openFacebook}></Hero>
+      <Hero analytics={analytics}></Hero>
       <Footer></Footer>
       {/* <Container>
         <div className='OpenFacebook float-right' onClick={openFacebook}>

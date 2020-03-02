@@ -97,6 +97,10 @@
 
       .cta-wrapper {
         padding: 48px 40px;
+
+        .nav-tabs {
+          margin-bottom: 15px;
+        }
         
         h2 {
           @extend %callout-bold;
