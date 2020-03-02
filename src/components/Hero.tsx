@@ -26,7 +26,7 @@ function Hero(props: HeroProps) {
                 <Col className="bernie-phone col-7"></Col>
                 <Col className="cta-wrapper col-5">
                     <h2>DMs. <i>For Bernie.</i></h2>
-                    <p>Phonebanking is awesome. So is textbanking. But what if you want a more direct relationship with the folks you're trying to convince? Facebanking is a way for you to directly message your friends on Facebook <b>who already like Bernie Sanders</b></p>
+                    <p>Phonebanking is awesome. So is textbanking. But what if you want a more direct relationship with the folks you're trying to convince? Facebanking is a way for you to directly message your friends on Facebook <b>who already like Bernie Sanders.</b></p>
                     <h3>How to Facebank?</h3>
                     <ol>
                         <li>Click anywhere on the below text to copy it to your clipboard</li>
