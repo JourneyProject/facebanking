@@ -9,6 +9,8 @@ import Card from 'react-bootstrap/Card'
 
 import CopyToClipboard from 'react-copy-to-clipboard';
 
+import BerniePhoneImage from '../images/bernie-phone.png'
+
 const FACEBANK_DEFAULT_TEXT = "Hi! I saw that you liked Bernie's Facebook page. Bernie believes we have a corrupt political and economic system that needs major change.He's running for president to make our economy, our government, and our health care system work for all of us, not just the wealthy few. Are you in for Bernie?"
 
 type HeroProps = {
@@ -23,8 +25,11 @@ function Hero(props: HeroProps) {
     return (
         <Container fluid className={containerClassNames}>
             <Row className="no-gutters">
-                <Col className="bernie-phone col-7"></Col>
-                <Col className="cta-wrapper col-5">
+                <Col className="bernie-phone-mobile d-xs-none d-sm-none d-md-none d-lg-none d-xl-none"><img src={BerniePhoneImage}></img></Col>
+            </Row>
+            <Row className="no-gutters">
+                <Col className="bernie-phone col-xl-6 col-lg-6 col-md-6 d-none d-xs-none d-sm-none d-md-none d-lg-block d-xl-block bg-img-none-md bg-50 bg-cover"></Col>
+                <Col className="cta-wrapper col-xl-6 col-lg-6 col-md-12 col-xs-12 col-sm-12">
                     <h2>DMs. <i>For Bernie.</i></h2>
                     <p>Phonebanking is awesome. So is textbanking. But what if you want a more direct relationship with the folks you're trying to convince? Facebanking is a way for you to directly message your friends on Facebook <b>who already like Bernie Sanders.</b></p>
                     <h3>How to Facebank?</h3>
