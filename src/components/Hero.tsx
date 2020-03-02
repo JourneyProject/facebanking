@@ -34,6 +34,7 @@ function Hero(props: HeroProps) {
                     <p>Phonebanking is awesome. So is textbanking. But what if you want a more direct relationship with the folks you're trying to convince? Facebanking is a way for you to directly message your friends on Facebook <b>who already like Bernie Sanders.</b></p>
                     <h3>How to Facebank?</h3>
                     <ol>
+                        <li>Make sure you are already logged into Facebook</li>
                         <li>Click anywhere on the below text to copy it to your clipboard</li>
                         <li>Click the big red button <i>(this will open a new window{!IS_FIREFOX_DESKTOP && <span> into FB Messenger</span>})</i></li>
                         {IS_FIREFOX_DESKTOP && <li>Scroll down on the page that opens. You'll see a list of your friends who have liked Bernie's page. Reach out to them via messenger! <i>(Applicable for Firefox on Desktop Only)</i></li>}
