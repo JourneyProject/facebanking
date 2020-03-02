@@ -10,7 +10,7 @@ function Footer() {
         <Container fluid className="footer-wrapper">
             <Row className="no-gutters">
                 <Col className="callout col-12">
-                    <p>Made with <i>♥️</i> by <a href="https://github.com/JourneyProject" target="_blank">Journey</a>&nbsp;&nbsp;|&nbsp;&nbsp;© 2020 Journey, All rights reserved.</p>
+                    <p>Made with <i>♥️</i> by <a href="https://github.com/JourneyProject" target="_blank">Journey</a> (not affiliated with Bernie 2020)&nbsp;&nbsp;|&nbsp;&nbsp;© 2020 Journey, All rights reserved.</p>
                 </Col>
             </Row>
         </Container>

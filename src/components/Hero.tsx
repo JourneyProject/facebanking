@@ -9,7 +9,7 @@ import Card from 'react-bootstrap/Card'
 
 import CopyToClipboard from 'react-copy-to-clipboard';
 
-const FACEBANK_DEFAULT_TEXT = 'Hi! Election day in your state is March 3rd! Will you be voting for Bernie?'
+const FACEBANK_DEFAULT_TEXT = "Hi! I saw that you liked Bernie's Facebook page. Bernie believes we have a corrupt political and economic system that needs major change.He's running for president to make our economy, our government, and our health care system work for all of us, not just the wealthy few. Are you in for Bernie?"
 
 type HeroProps = {
     onCtaClick(): void
