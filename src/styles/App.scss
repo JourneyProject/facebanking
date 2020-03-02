@@ -89,9 +89,11 @@
         background-position: top;
       }
 
-      // .bernie-phone-mobile {
-
-      // }
+      .bernie-phone-mobile {
+        img {
+          max-width: 100%;
+        }
+      }
 
       .cta-wrapper {
         padding: 48px 40px;
