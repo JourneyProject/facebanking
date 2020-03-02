@@ -14,6 +14,7 @@ import Footer from './Footer'
 import Analytics from 'analytics'
 // @ts-ignore: No types available
 import googleAnalytics from '@analytics/google-analytics'
+import { IS_FIREFOX_DESKTOP, IS_LOCAL_SERVER } from './environment';
 
 const analytics = Analytics({
   app: 'dms-for-bernie',
@@ -22,13 +23,7 @@ const analytics = Analytics({
       trackingId: 'UA-159403078-1'
     })
   ]
-})
-
-const IS_FIREFOX_DESKTOP =
-  /Firefox/i.test(navigator.userAgent) && !/mobile/i.test(navigator.userAgent);
-
-const IS_LOCAL_SERVER =
-  /localhost/i.test(window.location.toString()) || /127.0.0.1/i.test(window.location.toString());
+});
 
 function openFacebook() {
   if (IS_FIREFOX_DESKTOP) {
@@ -37,7 +32,7 @@ function openFacebook() {
     window.open(
       'https://m.facebook.com/nt/?id=%2Fpages%2Fentity%2Fstream%2F%3Fpage_id%3D124955570892789%26fetcher%3Dfriends_who_liked',
       '_blank',
-      'width=320,height=480'
+      'width=320,height=490'
     );
   }
   if (!IS_LOCAL_SERVER) { analytics.track('dm-button-clicked') }
@@ -51,7 +46,7 @@ function App() {
     <div className='App'>
       <Header></Header>
       <TopCallout></TopCallout>
-      <Hero onCtaClick={openFacebook} isFirefox={IS_FIREFOX_DESKTOP}></Hero>
+      <Hero onCtaClick={openFacebook}></Hero>
       <Footer></Footer>
       {/* <Container>
         <div className='OpenFacebook float-right' onClick={openFacebook}>

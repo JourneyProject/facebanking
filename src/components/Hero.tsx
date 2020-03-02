@@ -9,18 +9,18 @@ import Col from 'react-bootstrap/Col'
 import Card from 'react-bootstrap/Card'
 
 import BerniePhoneImage from '../images/bernie-phone.png'
+import { IS_FIREFOX_DESKTOP } from './environment';
 
 const FACEBANK_DEFAULT_TEXT = "Hi! I saw that you liked Bernie's Facebook page. Bernie believes we have a corrupt political and economic system that needs major change. He's running for president to make our economy, our government, and our health care system work for all of us, not just the wealthy few. Are you in for Bernie?"
 
 
 type HeroProps = {
     onCtaClick(): void
-    isFirefox: boolean
 }
 
 function Hero(props: HeroProps) {
     let containerClassNames = "hero-wrapper"
-    if (props.isFirefox) { containerClassNames += " firefox" }
+    if (IS_FIREFOX_DESKTOP) { containerClassNames += " firefox" }
 
     return (
         <Container fluid className={containerClassNames}>
@@ -35,9 +35,9 @@ function Hero(props: HeroProps) {
                     <h3>How to Facebank?</h3>
                     <ol>
                         <li>Click anywhere on the below text to copy it to your clipboard</li>
-                        <li>Click the big red button <i>(this will open a new window into FB Messenger)</i></li>
-                        {props.isFirefox && <li>In the new window, just click the link below and scroll down on the page that opens. You'll see a list of your friends who have liked Bernie's page. Reach out to them via messenger! <i>(Applicable for Firefox on Desktop Only)</i></li>}
-                        <li>In the new window, click the <i className="fab fa-facebook-messenger"></i> next to a friends name <i>(Remember, these are friends <b>who already like Bernie)</b></i></li>
+                        <li>Click the big red button <i>(this will open a new window{!IS_FIREFOX_DESKTOP && <span> into FB Messenger</span>})</i></li>
+                        {IS_FIREFOX_DESKTOP && <li>Scroll down on the page that opens. You'll see a list of your friends who have liked Bernie's page. Reach out to them via messenger! <i>(Applicable for Firefox on Desktop Only)</i></li>}
+                        {!IS_FIREFOX_DESKTOP && <li>In the new window, click the <i className="fab fa-facebook-messenger"></i> next to a friends name <i>(Remember, these are friends <b>who already like Bernie)</b></i></li>}
                     </ol>
                     <CopyToClipboard text={FACEBANK_DEFAULT_TEXT}>
                         <Card className="copy-area">
