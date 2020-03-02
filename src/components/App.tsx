@@ -2,7 +2,6 @@ import React from 'react';
 // @ts-ignore: No types available
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/App.scss'
-import MessengerImage from './images/messenger.png';
 
 // Components
 import Header from './Header'

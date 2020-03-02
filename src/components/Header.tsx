@@ -2,10 +2,8 @@ import React from 'react'
 
 // Bootstrap
 import Navbar from 'react-bootstrap/Navbar'
-import Nav from 'react-bootstrap/Nav'
 
 // Images
-import BernieImage from '../images/bernie.png'
 import BernieLogo from '../images/bernie-logo.svg'
 
 function Header() {

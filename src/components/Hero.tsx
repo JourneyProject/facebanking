@@ -9,7 +9,7 @@ import Card from 'react-bootstrap/Card'
 
 import CopyToClipboard from 'react-copy-to-clipboard';
 
-const FACEBANK_DEFAULT_TEXT = 'Some potential copy to send!'
+const FACEBANK_DEFAULT_TEXT = 'Hi! Election day in your state is March 3rd! Will you be voting for Bernie?'
 
 type HeroProps = {
     onCtaClick(): void
