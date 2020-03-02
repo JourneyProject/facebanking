@@ -25,7 +25,7 @@ function Hero(props: HeroProps) {
     return (
         <Container fluid className={containerClassNames}>
             <Row className="no-gutters">
-                <Col className="bernie-phone-mobile d-xs-show d-sm-show d-md-show d-lg-none d-xl-none"><img src={BerniePhoneImage}></img></Col>
+                <Col className="bernie-phone-mobile d-xs-show d-sm-show d-md-show d-lg-none d-xl-none"><img src={BerniePhoneImage} alt="Bernie Facebanking"></img></Col>
             </Row>
             <Row className="no-gutters">
                 <Col className="bernie-phone col-xl-6 col-lg-6 col-md-6 d-none d-xs-none d-sm-none d-md-none d-lg-block d-xl-block bg-img-none-md bg-50 bg-cover"></Col>
