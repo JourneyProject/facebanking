@@ -1,4 +1,5 @@
 import React from 'react'
+import CopyToClipboard from 'react-copy-to-clipboard';
 
 // Bootstrap
 import Button from 'react-bootstrap/Button'
@@ -7,11 +8,10 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Card from 'react-bootstrap/Card'
 
-import CopyToClipboard from 'react-copy-to-clipboard';
-
 import BerniePhoneImage from '../images/bernie-phone.png'
 
-const FACEBANK_DEFAULT_TEXT = "Hi! I saw that you liked Bernie's Facebook page. Bernie believes we have a corrupt political and economic system that needs major change.He's running for president to make our economy, our government, and our health care system work for all of us, not just the wealthy few. Are you in for Bernie?"
+const FACEBANK_DEFAULT_TEXT = "Hi! I saw that you liked Bernie's Facebook page. Bernie believes we have a corrupt political and economic system that needs major change. He's running for president to make our economy, our government, and our health care system work for all of us, not just the wealthy few. Are you in for Bernie?"
+
 
 type HeroProps = {
     onCtaClick(): void
