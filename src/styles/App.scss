@@ -57,10 +57,27 @@
     }
   }
 
+  .top-callout-wrapper {
+    background-color: #2b9cd9;
+    height: 39px;
+
+    p {
+      line-height: 39px;
+      font-size: 16px;
+      font-weight: 500;
+      text-align: center;
+      color: white;
+    }
+  }
+
   // Hero Call Out
   .hero-wrapper {
     padding: 0;
     height: 600px;
+
+    &.firefox {
+      height: 700px;
+    }
     
     .row {
       height: 100%;
@@ -97,9 +114,14 @@
           }
         }
 
+        .copy-area {
+
+        }
+
         .cta {
+          margin-top: 20px;
           font-weight: 600;
-          
+
           .fb-messenger-logo {
             width: 25px;
             height: 25px;
@@ -108,6 +130,31 @@
             color: white;
             background-color: white;
           }
+        }
+      }
+    }
+  }
+
+  .footer-wrapper {
+    p {
+      text-align: center;
+      margin-bottom: 0;
+      @extend %callout-bold;
+      font-size: 14px;
+      padding: 20px 0;
+      
+      i {
+        margin-left: 2px;
+        margin-right: 2px;
+        font-style: normal;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+
+        &:hover {
+          color: #2b9cd9;
         }
       }
     }

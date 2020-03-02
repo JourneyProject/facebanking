@@ -6,9 +6,9 @@ import MessengerImage from './images/messenger.png';
 
 // Components
 import Header from './Header'
-import Container from 'react-bootstrap/Container'
 import Hero from './Hero'
-import Jumbotron from 'react-bootstrap/Jumbotron'
+import TopCallout from './TopCallout'
+import Footer from './Footer'
 
 
 // @ts-ignore: No types available
@@ -51,7 +51,9 @@ function App() {
   return (
     <div className='App'>
       <Header></Header>
-      <Hero onCtaClick={openFacebook}></Hero>
+      <TopCallout></TopCallout>
+      <Hero onCtaClick={openFacebook} isFirefox={IS_FIREFOX_DESKTOP}></Hero>
+      <Footer></Footer>
       {/* <Container>
         <div className='OpenFacebook float-right' onClick={openFacebook}>
           Send DMs on Facebook
