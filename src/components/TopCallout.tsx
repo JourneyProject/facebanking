@@ -10,7 +10,7 @@ function TopCallout() {
         <Container fluid className="top-callout-wrapper">
             <Row className="no-gutters">
                 <Col className="callout col-12">
-                    <p>Super Tuesday is <i>this Tuesday!</i> Reach out to friends from Super Tuesday states!</p>
+                    <p>Idaho, Michigan, Mississippi, Missouri, North Dakota, Washington vote <i>this Tuesday!</i></p>
                 </Col>
             </Row>
         </Container>
