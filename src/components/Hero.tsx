@@ -60,7 +60,7 @@ function Hero(props: HeroProps) {
                 <Col className="bernie-phone col-xl-6 col-lg-6 col-md-6 d-none d-xs-none d-sm-none d-md-none d-lg-block d-xl-block bg-img-none-md bg-50 bg-cover"></Col>
                 <Col className="cta-wrapper col-xl-6 col-lg-6 col-md-12 col-xs-12 col-sm-12">
                     <Tabs defaultActiveKey={Candidates.SANDERS} id="uncontrolled-tab-example">
-                        <Tab eventKey={Candidates.SANDERS} title="Message Bernie Supporters">
+                        <Tab eventKey={Candidates.SANDERS} title="Bernie Supporters">
                             <h2>DMs. <i>For Bernie.</i></h2>
                             <p>Phonebanking is awesome. So is textbanking. But what if you want a more direct relationship with the folks you're trying to convince? Facebanking is a way for you to directly message your friends on Facebook <b>who already like Bernie Sanders.</b></p>
                             <h3>How to Facebank?</h3>
@@ -82,7 +82,7 @@ function Hero(props: HeroProps) {
                                 <Button variant="danger" block size="lg" className="cta" onClick={() => openFacebook(Candidates.SANDERS)}><i className="fab fa-facebook-messenger"></i>&nbsp;&nbsp;Facebank Here!</Button>
                             </CopyToClipboard>
                         </Tab>
-                        <Tab eventKey={Candidates.WARREN} title="Message Warren Supporters">
+                        <Tab eventKey={Candidates.WARREN} title="Warren Supporters">
                             <h2>DMs. <i>For Bernie.</i></h2>
                             <p>Phonebanking is awesome. So is textbanking. But what if you want a more direct relationship with the folks you're trying to convince? Facebanking is a way for you to directly message your friends on Facebook <b>who like Elizabeth Warren</b> and convince them to vote for Bernie.</p>
                             <h3>How to Facebank?</h3>
